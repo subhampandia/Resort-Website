@@ -1,0 +1,139 @@
+/* ================= BOOKING PAGE ================= */
+
+.booking-hero {
+  position: relative;
+  height: 60vh;
+  background: url("images/bbsr.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.booking-hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.booking-hero-content h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.booking-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* FORM SECTION */
+.booking-section {
+  padding: 80px 20px;
+  background: #f9f9f9;
+}
+
+.booking-container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.booking-container h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.booking-subtitle {
+  text-align: center;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;background: #f4f5f7;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--red);
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+.booking-btn {
+  grid-column: span 2;
+  background: var(--red);
+  color: #fff;
+  border: none;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.booking-btn:hover {
+  background: #b91a16;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: span 2;
+  }
+
+  .booking-container {
+    padding: 10px;
+  }
+
+  .booking-hero-content h1 {
+    font-size: 1.9rem;
+  }
+  .booking-hero-content p {
+    font-size: 1rem;
+  }
+}

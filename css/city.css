@@ -1,0 +1,253 @@
+/* ================= HERO ================= */
+.city-hero {
+  height: 90vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+    margin-top: 10px; 
+    /* height of navbar */
+
+}
+
+.city-hero-overlay {
+  position: absolute;
+  inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+
+  }
+
+.city-hero-content {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.city-hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  animation: fadeUp 1s ease forwards;
+}
+
+.city-hero-content p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeUp 1.3s ease forwards;
+}
+
+/* ================= HERO ANIMATION ================= */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*================ About =================*/
+.city-about {
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+
+.city-about h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.city-about p {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* ================= BUTTON ================= */
+.city-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: #b30000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.city-btn:hover {
+  background: #8f0000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(179, 0, 0, 0.4);
+}
+.city-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+/* ================= ROOMS ================= */
+.city-rooms {
+  padding: 100px 0;
+  background: #fff;
+}
+
+.city-rooms h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.1rem;
+}
+
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.room-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
+}
+.room-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #b30000;
+  font-weight: 600;
+}
+
+.room-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.room-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.room-card p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #b30000;
+  margin-bottom: 18px;
+}
+
+.room-card a {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: #b30000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.room-card a:hover {
+  background: #8f0000;
+}
+
+/* ================= CITY BACKGROUNDS ================= */
+.city-hero.puri {
+  background-image: url("/project5/images/puri.jpg");
+}
+
+.city-hero.bhubaneswar {
+  background-image: url("/project5/images/bbsr.jpg");
+}
+
+.city-hero.paradip {
+  background-image: url("/project5/images/paradip.avif");
+}
+
+.city-hero.joda {
+  background-image: url("/project5/images/joda.jpg");
+}
+
+.city-amenities {
+  background: #f8f9fa;
+  padding: 90px 0;
+  text-align: center;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.amenities-grid div {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.amenities-grid i {
+  font-size: 1.8rem;
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+.amenities-grid span {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.city-cta {
+  padding: 120px 20px;
+  background: linear-gradient(
+    to right,
+    rgba(230, 77, 82, 0.85),
+    rgba(91, 115, 163, 0.85)
+  );
+  text-align: center;
+  color: #fff;
+}
+
+.city-cta h2 {
+  font-size: 2.6rem;
+  margin-bottom: 25px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .city-hero {
+    height: 60vh;
+  }
+
+  .city-hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .city-hero-content p {
+    font-size: 1rem;
+  }
+
+  .room-grid {
+    padding: 20px;
+    gap: 20px;
+  }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/project5/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg top-nav fixed-top navbar-dark">
+      <div class="container">
+        <!-- LOGO (GO HOME) -->
+        <a class="navbar-brand" href="/project5/index.html">
+          <img src="/project5/images/gvit.png" alt="Logo" height="40" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="/project5/index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Hotels
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/project5/hotels/puri.html"
+                    >Puri</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/project5/hotels/bhubaneswar.html"
+                  >
+                    Bhubaneswar
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/project5/hotels/paradip.html">
+                    Paradip
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/project5/hotels/joda.html">
+                    Joda
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/project5/index.html#mice">Mice</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/project5/index.html#dine">Dine</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/project5/index.html#experience"
+                >Experience
+                </a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Travels
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/project5/tours/puri.html">Puri Tourism</a></li>
+                <li>
+                  <a class="dropdown-item" href="/project5/tours/bbsr.html  ">Bhubaneswar Tourism</a>
+                </li>
+                <li><a class="dropdown-item" href="/project5/tours/paradip.html">Paradip Tourism</a></li>
+                <li><a class="dropdown-item" href="/project5/tours/joda.html">Joda Tourism</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/project5/booking.html">Booking</a>
+            </li>
+
+            <!-- SEARCH -->
+            <div class="d-flex align-items-center search-container">
+              <div class="search-box" id="searchBox">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Search hotels..."
+                />
+              </div>
+              <button
+                class="search-toggle-btn"
+                id="searchToggle"
+                aria-label="Toggle search"
+              >
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

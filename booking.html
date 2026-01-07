@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Your Stay | Empire Hotels</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="booking.css" />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- BOOKING HERO -->
+  <section class="booking-hero">
+    <div class="booking-hero-overlay"></div>
+    <div class="booking-hero-content">
+      <h1>Book Your Stay</h1>
+      <p>Luxury stays across our destinations</p>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section class="booking-section">
+    <div class="booking-container">
+
+      <h2>Reservation Details</h2>
+      <p class="booking-subtitle">
+        Choose your destination, dates and preferences
+      </p>
+
+      <form class="booking-form">
+
+        <div class="form-group">
+          <label>Hotel Location</label>
+          <select required>
+            <option value="">Select Location</option>
+            <option>Puri</option>
+            <option>Bhubaneswar</option>
+            <option>Paradip</option>
+            <option>Joda</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label >Check-in Date</label>
+          <input type="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Check-out Date</label>
+          <input type="date" required />
+        </div>
+
+        <div class="form-group">
+          <label>Adults</label>
+          <select required>
+            <option>1 Guest</option>
+            <option>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4 Guests</option>
+            <option>5 Guests</option>
+            <option>6 Guests</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Room Type</label>
+          <select required>
+            <option>Deluxe Room</option>
+            <option>Executive Room</option>
+            <option>Suite</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Children</label>
+          <select required>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label>Special Requests</label>
+          <textarea rows="4" placeholder="Any special requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="booking-btn">
+          Check Availability
+        </button>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="js/layout.js"></script>
+</body>
+</html>

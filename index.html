@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empire Hotel</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <!-- HERO SLIDER -->
+    <section class="empire-hero">
+      <!-- Background Slider -->
+      <div class="hero-slider">
+        <div
+          class="hero-slide active"
+          data-title="EMPIRES PARADEEP"
+          data-text="Luxury stay by the sea with world-class hospitality"
+          style="background-image: url('images/paradip.avif')"
+        ></div>
+
+        <div
+          class="hero-slide"
+          data-title="EMPIRES JODA"
+          data-text="Luxury stay with world-class hospitality"
+          style="background-image: url('images/joda.jpg')"
+        ></div>
+
+        <div
+          class="hero-slide"
+          data-title="EMPIRES BHUBANESWAR"
+          data-text="Premium business hotel in the heart of the city"
+          style="background-image: url('images/bbsr.jpg')"
+        ></div>
+
+        <div
+          class="hero-slide"
+          data-title="EMPIRES PURI"
+          data-text="A peaceful beachside retreat near the holy city"
+          style="background-image: url('images/puri.jpg')"
+        ></div>
+
+        <!-- Arrows -->
+        <button class="hero-arrow hero-prev" aria-label="Previous slide">
+          &#10094;
+        </button>
+        <button class="hero-arrow hero-next" aria-label="Next slide">
+          &#10095;
+        </button>
+      </div>
+
+      <!-- Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="container">
+          <div class="hero-indicators">
+            <span class="indicator active" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+            <span class="indicator" data-slide="3"></span>
+          </div>
+
+          <span class="hero-subtitle">WELCOME TO</span>
+          <h1 id="hero-title">EMPIRES PARADEEP</h1>
+          <p id="hero-text">
+            Luxury stay by the sea with world-class hospitality
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="welcome-empire">
+      <div class="welcome-container">
+        <div class="welcome-content">
+          <h5>WELCOME TO</h5>
+          <h2>Empires Group of Hotels</h2>
+
+          <p>
+            Empires Group of Hotels offers a perfect blend of luxury, comfort,
+            and warm hospitality. Strategically located across Odisha, our
+            hotels cater to both business and leisure travellers with
+            world-class amenities and personalized services.
+          </p>
+
+          <p>
+            From elegant rooms to premium dining and exceptional event spaces,
+            every detail at Empires is designed to give you a memorable stay.
+          </p>
+
+          <a href="#accommodation" class="welcome-btn">Explore Rooms</a>
+        </div>
+      </div>
+    </section>
+    <!--Accomodation section-->
+    <section class="accommodation">
+      <div class="container">
+        <h2>Accommodation</h2>
+        <p class="subtitle">Enjoy Unforgettable Stays</p>
+
+        <div class="acc-wrapper">
+          <!-- LEFT -->
+          <div class="acc-left">
+            <div class="city-list">
+              <div class="city-card active" data-city="puri">PURI</div>
+              <div class="city-card" data-city="bhubaneswar">BHUBANESWAR</div>
+              <div class="city-card" data-city="paradeep">PARADEEP</div>
+              <div class="city-card" data-city="joda">JODA</div>
+            </div>
+
+            <div class="acc-content">
+              <h3 id="city-title">Puri</h3>
+              <p id="city-desc">
+                Empires Group of Hotels is one of the leading luxury hotels
+                located in Bhubaneshwar, Paradeep & Puri providing all amenities
+                and facilities to its guests.
+              </p>
+
+              <h4>Facilities</h4>
+              <ul class="facilities">
+                <li>Meeting & Conference</li>
+                <li>Club and Spa</li>
+                <li>Restaurant</li>
+                <li>Business Centre</li>
+                <li>Swimming Pool</li>
+                <li>Swimming Pool</li>
+                <li>Swimming Pool</li>
+              </ul>
+
+              <a href="#" class="btn acc-btn bg-primary">View More Details</a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="acc-right">
+            <div class="image-grid">
+              <img id="img1" src="images/puri1.jpg" />
+              <img id="img2" src="images/puri2.jpg" />
+              <img id="img3" src="images/puri3.jpg" />
+              <img id="img4" src="images/puri4.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Mice and events-->
+    <section class="mice" id="mice">
+      <div class="container">
+        <h2>MICE & Events</h2>
+        <p class="subtitle">
+          Making your Conferences-Events elegant, modern, resourceful &
+          successful
+        </p>
+
+        <!-- CITY TABS -->
+        <div class="mice-cities">
+          <button class="mice-city active" data-city="bhubaneswar">
+            BHUBANESWAR
+          </button>
+          <button class="mice-city" data-city="puri">PURI</button>
+          <button class="mice-city" data-city="paradeep">PARADEEP</button>
+          <button class="mice-city" data-city="joda">JODA</button>
+        </div>
+
+        <!-- SLIDER -->
+        <div class="mice-slider-wrapper">
+          <button class="mice-arrow prev">&#10094;</button>
+
+          <div class="mice-viewport">
+            <div class="mice-slider" id="miceSlider"></div>
+          </div>
+          <button class="mice-arrow next">&#10095;</button>
+        </div>
+      </div>
+    </section>
+    <!--Wedding section-->
+    <section class="wedding-section">
+      <div class="container">
+        <h2>Wedding Venue Hotels in Odisha</h2>
+        <p class="subtitle">Crafting your Big Day celebration</p>
+
+        <div class="wedding-grid">
+          <!-- CARD 1 -->
+          <div class="wedding-card">
+            <div class="wedding-img">
+              <img src="images/honeymoon.jpg" alt="" />
+              <span class="location">📍 Bhubaneswar</span>
+            </div>
+            <div class="wedding-content">
+              <h4>HONEYMOONS</h4>
+              <p>A perfect wedding deserves a beautiful honeymoon.</p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="wedding-card">
+            <div class="wedding-img">
+              <img src="images/wedding.jpg" alt="" />
+              <span class="location">📍 Paradeep</span>
+            </div>
+            <div class="wedding-content">
+              <h4>GRAND WEDDING CELEBRATIONS</h4>
+              <p>
+                Empires Hotel transforms nuptials into a celebration of a
+                lifetime.
+              </p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="wedding-card">
+            <div class="wedding-img">
+              <img src="images/proposal.jpg" alt="" />
+              <span class="location">📍 Puri</span>
+            </div>
+            <div class="wedding-content">
+              <h4>THE PERFECT PROPOSAL</h4>
+              <p>Be it a grand gesture or intimate private moments together.</p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resturant-->
+    <section class="dine-section py-5" id="dine">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title res-title">Our Restaurants</h2>
+          <p class="subtitle text-muted">
+            Savour at our Signature restaurants of your selected destination.
+          </p>
+        </div>
+
+        <div class="restaurant-slider-container position-relative">
+          <button class="slider-arrow prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <!-- ✅ SINGLE ROW ONLY (IMPORTANT) -->
+          <div class="row g-4 restaurant-slider">
+            <!-- Bandhej – Bhubaneswar -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/bandhej.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Bandhej</h4>
+                  <p class="res-tagline">24/7 Flavors by the Sea</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> 24 Hrs</p>
+                    <p><strong>Please call:</strong> 7381919007</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="images/" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Bhubaneswar"
+                        data-restaurant="Bandhej"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Bhubaneswar</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Salt N Pepper – Bhubaneswar -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/salt.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Salt N Pepper</h4>
+                  <p class="res-tagline">Bhubaneswar Signature Dining</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> 07:00 AM - 11:00 PM</p>
+                    <p><strong>Please call:</strong> 0674-2571000</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Bhubaneswar"
+                        data-restaurant="Salt N Pepper"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Bhubaneswar</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sura Bar – Paradeep -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/sura.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Sura Bar</h4>
+                  <p class="res-tagline">Paradip's Finest Multi-cuisine</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> 11:00 AM - 10:30 PM</p>
+                    <p><strong>Please call:</strong> 9937100000</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Paradeep"
+                        data-restaurant="Sura Bar"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Paradeep</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Coffee Shop – Puri -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/Coffee-Shop.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Coffee Shop</h4>
+                  <p class="res-tagline">Global Town Fusion</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> Lunch & Dinner</p>
+                    <p><strong>Please call:</strong> 9938199330</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Puri"
+                        data-restaurant="Coffee Shop"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Puri</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pearl Restaurant – Puri -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/pearl.jpeg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Pearl Restaurant</h4>
+                  <p class="res-tagline">Global Town Fusion</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> Lunch & Dinner</p>
+                    <p><strong>Please call:</strong> 9938199330</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Puri"
+                        data-restaurant="Pearl Restaurant"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Puri</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deli Cafe – Paradeep -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/deli.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Deli Cafe</h4>
+                  <p class="res-tagline">Global Town Fusion</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> Lunch & Dinner</p>
+                    <p><strong>Please call:</strong> 9938199330</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Paradeep"
+                        data-restaurant="Deli Cafe"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Paradeep</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Deli Cafe – Bhubaneswar -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/deslibbsr.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Deli Cafe</h4>
+                  <p class="res-tagline">Global Town Fusion</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> Lunch & Dinner</p>
+                    <p><strong>Please call:</strong> 9938199330</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Bhubaneswar"
+                        data-restaurant="Deli Cafe"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Bhubaneswar</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Big Shot Bar – Paradeep -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/bar.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Big Shot Bar</h4>
+                  <p class="res-tagline">Global Town Fusion</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> Lunch & Dinner</p>
+                    <p><strong>Please call:</strong> 9938199330</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Paradeep"
+                        data-restaurant="Big Shot Bar"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Paradeep</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mosaic Restaurant – Paradeep -->
+            <div class="col-md-6">
+              <div class="restaurant-card">
+                <div class="res-img-wrapper">
+                  <img src="images/mosaic.jpg" class="img-fluid" />
+                </div>
+                <div class="res-content">
+                  <h4 class="res-name">Mosaic Restaurant</h4>
+                  <p class="res-tagline">Global Town Fusion</p>
+                  <div class="res-details">
+                    <p><strong>Timing:</strong> Lunch & Dinner</p>
+                    <p><strong>Please call:</strong> 9938199330</p>
+                  </div>
+                  <div
+                    class="res-footer d-flex justify-content-between align-items-center"
+                  >
+                    <div class="res-btns">
+                      <a href="#" class="btn btn-danger btn-sm me-2"
+                        >View Menu</a
+                      >
+                      <a
+                        href="javascript:void(0)"
+                        class="btn btn-outline-danger btn-sm reserve-btn"
+                        data-city="Paradeep"
+                        data-restaurant="Mosaic Restaurant"
+                        >Reserve</a
+                      >
+                    </div>
+                    <span class="res-location"
+                      ><i class="fas fa-map-marker-alt"></i> Paradeep</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-arrow next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!--Event Section-->
+    <section class="experience-section" id="experience">
+      <div class="experience-container">
+        <div class="text-center mb-5">
+          <h5
+            style="
+              letter-spacing: 3px;
+              font-size: 14px;
+              color: var(--gold);
+              font-weight: 600;
+              text-transform: uppercase;
+            "
+          >
+            Luxury Amenities
+          </h5>
+          <h2
+            style="
+              font-size: 42px;
+              color: #fff;
+              font-weight: 700;
+              margin-top: 10px;
+            "
+          >
+            Experience Empires
+          </h2>
+          <div
+            style="
+              width: 60px;
+              height: 3px;
+              background: var(--red);
+              margin: 20px auto;
+            "
+          ></div>
+        </div>
+
+        <div class="experience-main">
+          <div class="experience-image-box">
+            <img id="mainImage" src="" alt="Hotel Amenity" />
+          </div>
+          <div class="experience-text-box">
+            <h3 id="mainTitle">Loading...</h3>
+            <p id="mainDesc"></p>
+          </div>
+        </div>
+
+        <div class="experience-nav-group">
+          <button class="nav-arrow" id="btnPrev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="experience-tabs-window" id="tabsList"></div>
+          <button class="nav-arrow" id="btnNext">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Reserve Table Button -->
+    <div id="reserveModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+
+        <h2>RESERVE A TABLE</h2>
+        <p class="required-text">
+          Fields marked with an <span>*</span> are required
+        </p>
+
+        <form class="reserve-form">
+          <div class="row">
+            <div class="field">
+              <label>First Name <span>*</span></label>
+              <input type="text" required />
+            </div>
+
+            <div class="field">
+              <label>Last Name <span>*</span></label>
+              <input type="text" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Phone <span>*</span></label>
+              <input type="tel" required />
+            </div>
+
+            <div class="field">
+              <label>Email <span>*</span></label>
+              <input type="email" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label>Date <span>*</span></label>
+              <input type="date" required />
+
+              <div class="time-row">
+                <select>
+                  <option>12</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                </select>
+                <select>
+                  <option>00</option>
+                  <option>15</option>
+                  <option>30</option>
+                  <option>45</option>
+                </select>
+                <select>
+                  <option>AM</option>
+                  <option>PM</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- ✅ CITY DROPDOWN -->
+            <div class="field">
+              <label>Select City <span>*</span></label>
+              <select id="citySelect" required>
+                <option value="">Select City</option>
+                <option>Bhubaneswar</option>
+                <option>Puri</option>
+                <option>Paradeep</option>
+                <option>Joda</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- ✅ RESTAURANT DROPDOWN -->
+          <div class="row">
+            <div class="field full">
+              <label>Choose Restaurant <span>*</span></label>
+              <select id="restaurantSelect" required>
+                <option value="">Select Restaurant</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label>Additional Details</label>
+            <textarea></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
